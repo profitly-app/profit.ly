@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+application/public/css/*.css
+application/public/js/*.js
+.dev.env
+profitly.tar.gz
+profitly.tar
+build

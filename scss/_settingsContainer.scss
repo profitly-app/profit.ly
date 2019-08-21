@@ -1,0 +1,126 @@
+.form-input {
+
+    & + .form-input {
+        margin-top: 10px;
+    }
+
+    .form-input-checkbox,
+    .form-input-dropdown,
+    .form-input-label,
+    .form-input-text {
+        width: 100%;
+    }
+}
+
+.form-input-label {
+
+    & + .form-input-text {
+        margin-top: 5px;
+    }
+}
+
+.form-input-text {
+
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 7px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 300px;
+
+    input[type=text] {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        outline: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.form-input-dropdown {
+
+}
+
+.form-input-checkbox {
+
+    .form-input-label {
+        display: inline-block;
+    }
+}
+
+.form-input-label {
+    color: black;
+    font-size: 18px;
+}
+
+.form-input-textarea {
+
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 7px;
+    overflow: hidden;
+    width: 300px;
+
+    textarea {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        outline: 0;
+        resize: none;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 840px) {
+
+    .account-sidebar {
+
+        width: 30%;
+
+        ul {
+
+        }
+
+        li {
+
+            &.active {
+
+                a {
+                    color: #000;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        a {
+            color: #c3c3c3;
+            font-size: 22px;
+            font-weight: 500;
+        }
+    }
+
+    .account-content {
+        background-color: white;
+        border-radius: 20px;
+        padding: 50px;
+        width: 70%;
+    }
+
+    .account-heading {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+    .settings-container {
+        margin: 50px 100px;
+        @include eb-display-flex();
+        flex-direction: row;
+    }
+}

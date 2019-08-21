@@ -1,0 +1,52 @@
+{
+  "name": "eb-profitly-app-work",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "bunyan": "^1.8.12",
+    "classnames": "^2.2.6",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^2.2.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "ignore-styles": "^5.0.1",
+    "isomorphic-fetch": "^2.2.1",
+    "mongoose": "^5.6.6",
+    "node-sass": "^4.12.0",
+    "numeral": "^2.0.6",
+    "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "react-stripe-elements": "^4.0.0",
+    "redux": "^4.0.4",
+    "stripe": "^7.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/plugin-transform-async-to-generator": "^7.5.0",
+    "@babel/plugin-transform-object-assign": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.5.5",
+    "core-js": "^3.1.4",
+    "react-tools": "^0.13.3",
+    "redux-logger": "^3.0.6"
+  },
+  "scripts": {
+    "build": "npm run compile; npm run build-css;npm run build-js; npm run build-mgmt;",
+    "build-css": "node-sass scss/pages --output build/public/css --output-style compressed",
+    "build-js": "browserify build/redux/index.js -o build/public/js/bundle.js",
+    "build-mgmt": "browserify build/redux/mgmt.js -o build/public/js/mgmt.js",
+    "compile": "./node_modules/.bin/babel ./application --out-dir ./build --plugins @babel/plugin-transform-async-to-generator --presets @babel/preset-react,@babel/preset-env"
+  }
+}

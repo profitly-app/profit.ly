@@ -1,0 +1,31 @@
+@import "../mixins";
+@import "../reset";
+@import "../badge";
+@import "../buttons";
+@import "../fonts";
+@import "../grid";
+@import "../header";
+@import "../hero";
+@import "../footer";
+@import "../listingGrid";
+@import "../listingRibbon";
+@import "../myAcctDropdown";
+@import "../scaffold";
+@import "../typography";
+
+.listings {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 840px) {
+
+    .listings {
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+}

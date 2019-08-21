@@ -1,0 +1,28 @@
+@import "../mixins";
+@import "../reset";
+@import "../buttons";
+@import "../fonts";
+@import "../footer";
+@import "../grid";
+@import "../header";
+@import "../hero";
+@import "../scaffold";
+@import "../starRating";
+@import "../subFooter";
+@import "../textContent";
+@import "../typography";
+
+.header-image {
+    width: 115px;
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 840px) {
+
+    .header-image {
+        width: auto;
+    }
+}

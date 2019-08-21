@@ -1,0 +1,131 @@
+.listing-badges {
+
+    padding: 10px 15px;
+
+    .badge {
+
+        .badge {
+            height: 15px;
+            line-height: 15px;
+        }
+
+        .icon {
+            height: 15px;
+            width: 15px;
+        }
+    }
+}
+
+.listing-image {
+
+    height: 150px;
+    position: relative;
+    text-align: center;
+
+    img {
+        height: 100%;
+        width: auto;
+    }
+
+    .listing-collection,
+    .listing-favorite {
+        display: none;
+        position: absolute;
+    }
+}
+
+.listing-info {
+
+    border: 1px solid #ececec;
+    border-width: 1px 0;
+    padding: 10px 15px;
+
+    .listing-price {
+        display: inline-block;
+        font-weight: 700;
+        text-align: right;
+        width: 20%;
+    }
+
+    .listing-title {
+        display: inline-block;
+        width: 80%;
+    }
+}
+
+.listing-item-grid {
+
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    flex: 1;
+
+    .listing-badges {
+        justify-content: left;
+    }
+}
+
+.listing-locked {
+
+    background: rgba(255,255,255,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+
+    a {
+        @include eb-display-flex();
+        @include eb-flex(1 1 auto);
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: #c3c3c3;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .icon {
+        margin-bottom: 15px;
+    }
+}
+
+.listings-grid {
+    @include eb-display-flex();
+    flex-flow: column wrap;
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 840px) {
+
+    .listing-image {
+        height: 200px;
+    }
+
+    .listing-item-grid {
+        width: 32%;
+        flex: 0 0 calc(#{percentage(1 / 3)} - 40px);
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .listings-grid {
+        margin: 0 auto;
+        flex-direction: row;
+        flex-flow: row wrap;
+        width: 800px;
+    }
+}

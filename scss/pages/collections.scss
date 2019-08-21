@@ -1,0 +1,94 @@
+@import "../mixins";
+@import "../reset";
+@import "../buttons";
+@import "../fonts";
+@import "../grid";
+@import "../footer";
+@import "../header";
+@import "../hero";
+@import "../myAcctDropdown";
+@import "../scaffold";
+@import "../typography";
+
+.collections-container {
+    padding: 0 0 20px;
+    @include eb-display-flex();
+    flex-flow: column wrap;
+}
+
+.collection-item {
+    background-color: white;
+    text-align: center;
+    @include eb-display-flex();
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.collection-item-image {
+    margin-bottom: auto;
+}
+
+.collection-item-new {
+    background-color: #ebebeb;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection-item-new-heading {
+    margin-top: 10px;
+    color: #c3c3c3;
+    font-size: 20px;
+}
+
+.collection-item-product-count {
+
+    a {
+        color: #c3c3c3;
+        font-style: italic;
+    }
+}
+
+.collection-item-title {
+    padding: 5px 0;
+    background-color: #c3c3c3;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+}
+
+.listing-item-grid {
+    margin-top: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    vertical-align: top;
+    flex: 1;
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 840px) {
+
+    .collections-container {
+        padding: 80px 200px 100px;
+        flex-direction: row;
+        flex-flow: row wrap;
+    }
+
+    .listing-item-grid {
+        height: 400px;
+        width: 32%;
+        flex: 0 0 calc(#{percentage(1 / 3)} - 40px);
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}

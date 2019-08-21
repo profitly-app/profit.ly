@@ -1,0 +1,21 @@
+.badge {
+
+    display: inline-block;
+    height: auto;
+    text-align: center;
+
+    & + .badge {
+        margin-left: 15px;
+    }
+
+    .icon {
+       display: inline-block;
+       vertical-align: top;
+       width: 32px;
+    }
+
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+}

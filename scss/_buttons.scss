@@ -1,0 +1,64 @@
+.comp-button {
+    font-family: 'Avenir Black';
+    font-weight: normal;
+    color: #9dadff;
+    cursor: pointer;
+    display: inline-block;
+    outline: 0;
+    background: transparent;
+    padding: 11px 35px !important;
+    line-height: 15px;
+    border-radius: 7px;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.comp-button-inverted {
+
+    background: transparent;
+    border: 1px solid #9dadff;
+
+    &::hover {
+        border-color: rgba(255,255,255,0.83);
+        color: rgba(255,255,255,0.83);
+    }
+}
+
+.comp-button-green {
+    background-color: #08de95;
+    color: #ffffff;
+}
+
+.comp-button-facebook {
+    background-color: #4469b0;
+    color: #ffffff;
+}
+
+.comp-button-google {
+    background-color: #4688f1;
+    color: #ffffff;
+}
+
+.comp-button-white {
+    background-color: #ffffff;
+    color: #0016b7;
+}
+
+.comp-button-prefix-icon {
+
+    display: inline-block;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 5px;
+    left: 10px;
+    overflow: hidden;
+
+    img {
+        height: auto;
+        width: 100%
+    }
+}

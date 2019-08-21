@@ -1,0 +1,11 @@
+@mixin eb-flex($val) {
+    flex: $val;
+    -webkit-flex: $val;
+}
+@mixin eb-display-flex() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}

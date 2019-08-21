@@ -1,0 +1,102 @@
+.typ-h1 {
+    font-family: "Colfax", Sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 1.2em;
+}
+
+.typ-h2 {
+    font-family: "Colfax", Sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 88px;
+    line-height: 1.2em;
+}
+
+.typ-h3 {
+    font-family: "Colfax", Sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 64px;
+    line-height: 1.2em;
+}
+
+.typ-h4 {
+
+    color: #a5b4ff;
+    font-family: "Avenir", Sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.3em;
+    letter-spacing: -0.5px;
+
+    .typ-emphasis {
+        font-family: "Avenir Black", Sans-serif;
+        color: #fff;
+    }
+}
+
+.typ-h5 {
+    color: #fff;
+    font-family: "Avenir Roman", Sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.3em;
+}
+
+.typ-body {
+
+    color: #94a5f9;
+    font-family: "Colfax", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5em;
+
+    a {
+        color: #b3bbfc;
+        font-weight: 700;
+    }
+}
+
+.typ-muted {
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 840px) {
+
+    .typ-h1 {
+        font-size: 80px;
+        line-height: 1.2em;
+    }
+
+    .typ-h2 {
+        font-size: 88px;
+        line-height: 1.2em;
+    }
+
+    .typ-h3 {
+        font-size: 64px;
+        line-height: 1.2em;
+    }
+
+    .typ-h4 {
+        font-size: 26px;
+        line-height: 1.3em;
+        letter-spacing: -0.5px;
+    }
+
+    .typ-h5 {
+        font-size: 22px;
+        line-height: 1.3em;
+    }
+
+    .typ-body {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+}

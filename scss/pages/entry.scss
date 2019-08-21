@@ -1,0 +1,28 @@
+@import "../mixins";
+@import "../reset";
+@import "../buttons";
+@import "../fonts";
+@import "../footer";
+@import "../forms";
+@import "../scaffold";
+@import "../typography";
+@import "../authPages";
+@import "../customerGallery";
+@import "../starRating";
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 840px) {
+
+    .comp-button {
+
+        display: inline-block;
+        width: 250px;
+
+        & + .comp-button {
+            margin-left: 20px;
+        }
+    }
+}

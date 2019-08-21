@@ -1,0 +1,17 @@
+.item-reasons-horiz {
+
+}
+
+.item-reason {
+
+    display: inline-block;
+    width: percentage(1 / 5) - 4 * 2%;
+
+    & + .item-reason {
+        margin-left: 2%;
+    }
+
+    img {
+        margin-bottom: 15px;
+    }
+}

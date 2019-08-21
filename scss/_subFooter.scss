@@ -1,0 +1,113 @@
+.sub-footer {
+
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #0015be 0%, #0011a9 100%);
+
+    h5 {
+        margin-bottom: 20px;
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    p {
+        margin: 20px 0;
+        color: #abb6fc;
+        font-size: 17px;
+        line-height: 1.5em;
+        font-family: proxima_novaregular;
+    }
+
+    li {
+
+        font-family: "Colfax", Sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #94a5f9;
+
+        a {
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            color: inherit;
+        }
+    }
+}
+
+.sub-footer-affiliates {
+
+    margin-top: 20px;
+    margin-left: auto;
+
+    p {
+        font-family: "Colfax", Sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #94a5f9;
+    }
+}
+
+.sub-footer-container {
+
+    padding: 25px 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+    align-items: left;
+
+    img  {
+        width: 100%;
+    }
+}
+
+.sub-footer-menu-listing {
+    margin-top: 20px;
+}
+
+.sub-footer-profitly {
+
+    margin-right: auto;
+
+    img.profitly-logo {
+        width: 150px;
+    }
+
+    img.stripe {
+        width: 130px;
+    }
+}
+
+@media screen and (min-width: 840px) {
+
+    .sub-footer-affiliates {
+        margin: 0;
+        width: 243px;
+    }
+
+    .sub-footer-container {
+        padding: 0;
+        flex-direction: row;
+        height: 402px;
+        align-items: center;
+    }
+
+    .sub-footer-menu-listing {
+
+        margin-top: 0;
+        height: 200px;
+
+        & + .sub-footer-menu-listing {
+            margin-left: 75px;
+        }
+    }
+
+    .sub-footer-profitly {
+        width: 400px;
+    }
+}

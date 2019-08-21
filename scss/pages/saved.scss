@@ -1,0 +1,29 @@
+@import "../mixins";
+@import "../reset";
+@import "../badge";
+@import "../buttons";
+@import "../fonts";
+@import "../grid";
+@import "../header";
+@import "../hero";
+@import "../listingGrid";
+@import "../listingRibbon";
+@import "../footer";
+@import "../myAcctDropdown";
+@import "../scaffold";
+@import "../search";
+@import "../starRating";
+@import "../typography";
+@import "../customerGallery";
+
+section.listings {
+    padding-bottom: 450px;
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 840px) {
+
+}

@@ -1,0 +1,15 @@
+[
+    { "id": 0, "name": "Everything" },
+    { "id": 1, "name": "Homeware" },
+    { "id": 2, "name": "Electronics" },
+    { "id": 3, "name": "Outdoors" },
+    { "id": 4, "name": "Men's" },
+    { "id": 5, "name": "Women's" },
+    { "id": 6, "name": "Kids" },
+    { "id": 7, "name": "Music" },
+    { "id": 8, "name": "Sports" },
+    { "id": 9, "name": "Stationary" },
+    { "id": 10, "name": "Photography" },
+    { "id": 11, "name": "Toys" },
+    { "id": 12, "name": "Baby Clothing" }
+]

@@ -1,0 +1,46 @@
+.my-acct-dropdown {
+
+    position: relative;
+
+    ul {
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+    }
+
+    li {
+
+    }
+
+    a {
+        color: #9dadff;
+    }
+}
+
+.my-acct-dropdown-icon {
+
+    display: inline-block;
+    width: 10px;
+
+    svg {
+        width: 100%;
+    }
+}
+
+.my-acct-dropdown-title {
+    margin-right: 10px;
+    color: #9dadff;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.8;
+    vertical-align: top;
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 840px) {
+
+}

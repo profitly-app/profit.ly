@@ -1,0 +1,96 @@
+@import "../mixins";
+@import "../reset";
+@import "../badge";
+@import "../buttons";
+@import "../collectionSelection";
+@import "../fonts";
+@import "../grid";
+@import "../header";
+@import "../hero";
+@import "../listingGrid";
+@import "../listingRibbon";
+@import "../footer";
+@import "../myAcctDropdown";
+@import "../scaffold";
+@import "../search";
+@import "../starRating";
+@import "../typography";
+@import "../customerGallery";
+
+header {
+    background-color: #0016ad;
+}
+
+section.hero {
+    background-image: linear-gradient(darkblue, blue);
+}
+
+section.listings {
+    padding-bottom: 450px;
+}
+
+.listings-filter {
+
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ececec;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    font-size: 18px;
+    color: #c3c3c3;
+
+    & + .listings-filter {
+        margin-top: 15px;
+    }
+
+    > div {
+
+
+        display: inline-block;
+        text-align: center;
+        width: 50%;
+
+        &.isActive {
+            color: #000;
+            font-weight: 700;
+        }
+
+        & + div {
+            border-left: 1px solid #ececec;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.listings-filter-container {
+    @include eb-display-flex();
+    flex-flow: column wrap;
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 840px) {
+
+    .listings-filter {
+
+        width: 32%;
+        flex: 0 0 calc(#{percentage(1 / 3)} - 43px);
+        margin-right: 20px;
+        margin-left: 20px;
+
+        & + .listings-filter {
+            margin-top: 0;
+        }
+    }
+
+    .listings-filter-container {
+        margin: 0 auto;
+        flex-direction: row;
+        flex-flow: row wrap;
+        width: 800px;
+    }
+}

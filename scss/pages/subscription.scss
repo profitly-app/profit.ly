@@ -1,0 +1,219 @@
+@import "../mixins";
+@import "../reset";
+@import "../buttons";
+@import "../customerGallery";
+@import "../fonts";
+@import "../grid";
+@import "../scaffold";
+@import "../starRating";
+@import "../typography";
+
+footer,
+header {
+
+    .section-container {
+        height: 80px;
+    }
+}
+
+footer {
+
+    position: relative;
+
+    .shopify-logo {
+        width: 200px;
+    }
+
+    .products-left {
+        left: -280px;
+    }
+
+    .products-right {
+        right: -280px;
+    }
+
+    .products-left,
+    .products-right {
+        position: absolute;
+        bottom: -180px;
+        width: 600px;
+    }
+}
+
+.page {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #0826d1, #0622bb);
+    overflow: hidden;
+}
+
+.payment-amount {
+    margin: 30px 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.payment-container {
+    padding: 150px 0 350px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    text-align: center;
+}
+
+.payment-currency {
+    color: #ffffff;
+    font-size: 64px;
+    font-family: "Colfax", Sans-serif;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.payment-dollar-amount {
+    color: #ffffff;
+    font-size: 200px;
+    font-family: "Colfax", Sans-serif;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.payment-form {
+
+    margin: 40px 0;
+    width: 500px;
+
+    .comp-button {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        height: 62px;
+        font-size: 27px;
+        width: 100%;
+    }
+
+    .StripeElement {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+.payment-frequency {
+    color: #ffffff;
+    font-family: "Colfax", Sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.2em;
+}
+
+.payment-selection {
+
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 30px 60px;
+    background-color: #0016ad;
+    width: 600px;
+    height: 125px;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+
+    &.monthly {
+
+        .payment-selector {
+            float: left;
+        }
+
+        .monthly {
+            color: #ffffff;
+        }
+    }
+
+    &.yearly {
+
+        .payment-selector {
+            float: right;
+        }
+
+        .yearly {
+            color: #ffffff;
+        }
+    }
+}
+
+.payment-selection-heading {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.payment-selector {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 1000px;
+    background-color: #08de95;
+}
+
+.payment-selector-control {
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    border-radius: 1000px;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #04119f 25%, #04119f 100%);
+}
+
+.profitly-customers {
+
+    & + .typ-h3 {
+        margin: 10px 185px 0;
+    }
+}
+
+.payment-order-confirmation {
+    margin: 30px 0;
+    border: 1px solid #a5b4ff;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.StripeElement {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.02);
+    border: solid 1px #ffffff;
+    background-color: #ffffff;
+}
+
+.stripe-logo {
+    width: 125px;
+}
+
+.typ-h4 {
+    margin: 0 370px;
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 840px) {
+
+}

@@ -1,0 +1,150 @@
+.auth-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+footer,
+header {
+
+    display: inline-block;
+    width: 100%;
+
+    .auth-container {
+        height: 120px;
+    }
+}
+
+footer {
+
+    background-image: none;
+    box-sizing: border-box;
+
+    img {
+        width: 200px;
+    }
+}
+
+section {
+    display: inline-block;
+    width: 100%;
+}
+
+.comp-button {
+
+    height: 70px;
+    line-height: 48px;
+    font-size: 27px;
+
+    & + .comp-button {
+        margin-top: 20px;
+    }
+}
+
+.dots-background {
+    background-image: url('/images/Dots.png');
+    background-repeat: repeat-y;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.login-form {
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.page {
+    background-color: #0414a8;
+    position: relative;
+}
+
+.product-tile-background {
+    display: none;
+}
+
+.profitly-customers {
+    margin-bottom: 20px;
+}
+
+.star-rating {
+    margin: 15px 0 60px;
+}
+
+.comp-button,
+.form-col-2 {
+
+    & + .typ-body {
+        margin-top: 15px;
+    }
+}
+
+.comp-button,
+.form-text-input,
+.form-input-label {
+    width: 100%;
+}
+
+.form-text-input {
+
+    height: 70px;
+
+    input[type="password"],
+    input[type="text"] {
+        height: 48px;
+        line-height: 48px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 840px) {
+
+    section {
+
+        .auth-container {
+            padding: 200px 0;
+            height: 750px;
+        }
+    }
+
+    .auth-container {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        float: left;
+        margin-left: 12%;
+        text-align: center;
+    }
+
+    .dots-background {
+        width: 300px;
+    }
+
+    .product-tile-background {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+    }
+}
